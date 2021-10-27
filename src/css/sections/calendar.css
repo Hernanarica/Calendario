@@ -1,0 +1,6 @@
+.calendar__body-days {
+	border: 1px solid crimson;
+	display: grid;
+	grid-template-columns: repeat(7, 1.646875rem);
+	grid-template-rows: repeat(6, 1.646875rem);
+}
