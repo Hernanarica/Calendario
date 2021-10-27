@@ -1,4 +1,4 @@
-# Formulario de pago
+# Calendario funcional
 
 <p align="center">
   <img src="./src/assets/imgs/Thumbnail-calendario.jpg" />
