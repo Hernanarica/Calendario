@@ -119,4 +119,41 @@
 		max-inline-size: 498px;
 		inline-size: 100%;
 	}
+
+	.calendar__header {
+		padding-inline: 8.125rem;
+		padding-block: 11.625rem;
+	}
+
+	.calendar__body {
+		padding: 3.8125rem;
+		align-items: center;
+		gap: 1rem;
+	}
+
+	.calendar__body-calendar {
+		padding: 0;
+	}
+
+	.calendar__body-calendar-days {
+		grid-template-columns: repeat(7, 2.5rem);
+		grid-template-rows: repeat(6, 2.5rem);
+		gap: 0.5rem 1rem;
+	}
+
+	.calendar__body-title {
+		font: var(--desktop-h3);
+	}
+
+	.calendar__body-calendar-year {
+		font: var(--desktop-body2-bold);
+	}
+
+	.calendar__body-calendar-day {
+		font: var(--desktop-body3-regular);
+	}
+
+	.calendar__body-day {
+		font: var(--desktop-body2-regular);
+	}
 }
