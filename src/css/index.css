@@ -1,3 +1,5 @@
 @import './bootstrapping/bootstrapping.css';
 
+@import './sections/main.css';
 @import './sections/calendar.css';
+@import './components/buttons.css';
