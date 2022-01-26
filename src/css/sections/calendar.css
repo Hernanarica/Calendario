@@ -27,9 +27,10 @@
 .calendar__header-date {
 	font: var(--desktop-h5-medium);
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 	align-items: center;
 	vertical-align: middle;
+	gap: 0.5rem;
 }
 
 .calendar__header-date span:not(.calendar__header-date-day, .calendar__header-date-month, .calendar__header-date-year) {
@@ -48,6 +49,7 @@
 .calendar__body-title {
 	margin: 0;
 	font: var(--desktop-h4);
+	text-align: center;
 }
 
 .calendar__body-calendar {
@@ -71,10 +73,17 @@
 	font-weight: 500;
 }
 
+.calendar__header-calendar-days {
+	display: grid;
+	grid-template-columns: repeat(7, 1.646875rem);
+	grid-template-rows: repeat(1, 1.646875rem);
+	gap: 0.329375rem 0.660625rem;
+}
+
 .calendar__body-calendar-days {
 	display: grid;
 	grid-template-columns: repeat(7, 1.646875rem);
-	grid-template-rows: repeat(6, 1.646875rem);
+	grid-template-rows: repeat(5, 1.646875rem);
 	gap: 0.329375rem 0.660625rem;
 }
 
@@ -107,6 +116,15 @@
 	color: var(--primary);
 }
 
+.calendar__body-lastday {
+	color: var(--grey);
+}
+
+.calendar__body-day--active {
+	background-color: var(--secondary);
+	color: var(--primary);
+}
+
 @media screen and (min-width: 995px) {
 	.calendar {
 		flex-direction: initial;
@@ -133,6 +151,12 @@
 
 	.calendar__body-calendar {
 		padding: 0;
+	}
+
+	.calendar__header-calendar-days {
+		grid-template-columns: repeat(7, 2.5rem);
+		grid-template-rows: repeat(1, 2.5rem);
+		gap: 0.5rem 1rem;
 	}
 
 	.calendar__body-calendar-days {
